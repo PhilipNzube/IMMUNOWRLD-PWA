@@ -1,0 +1,1396 @@
+@media only screen and (min-width:1000px) {
+    #body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #Cont {
+        display: none;
+    }
+
+    #MainCont {
+        width: 100%;
+        min-width: 500px;
+        margin: auto;
+    }
+
+
+    #BG {
+        position: relative;
+        bottom: 100px;
+
+    }
+
+
+    #TopBar {
+        position: relative;
+        top: -80px;
+        height: 20px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    }
+
+    #Sandwich {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+    }
+
+    #SideBar {
+        position: relative;
+        top: -80px;
+        height: 520px;
+        width: 350px;
+        background-color: rgba(214, 25, 25, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.616) 2px 2px;
+        transition: all 5s ease-in-out;
+        display: none;
+    }
+
+
+
+    #Overlay {
+        position: relative;
+        top: -80px;
+        height: 420px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.685);
+        margin: auto;
+    }
+
+    #LogoImg {
+        border: rgb(255, 255, 255) 1px solid;
+        border-radius: 50px;
+    }
+
+    #LogoText {
+        filter: blur(0.05em);
+        filter: brightness(100em);
+        color: rgb(255, 0, 0);
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        bottom: 80px;
+        left: 80px;
+    }
+
+
+    #Gallary {
+        filter: blur(0.2em);
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        border-radius: 5px;
+        position: relative;
+        top: 50px;
+        left: 150px;
+        height: 180px;
+        width: 30%;
+    }
+
+    #Gallary:hover {
+        box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    #LArrow {
+        position: relative;
+        bottom: 1890px;
+        left: 20px;
+    }
+
+
+    #RArrow {
+        position: relative;
+        bottom: 1950px;
+        left: 1300px;
+    }
+
+    #Dot1 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+        /*
+background-color: rgb(189, 33, 33);  
+*/
+    }
+
+    #Dot2 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+    }
+
+    #Dot3 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+    }
+
+    #Dots {
+        position: relative;
+        left: 100px;
+    }
+
+    #Links {
+        position: relative;
+        bottom: 35px;
+        right: 3%;
+    }
+
+    #Home {
+        color: rgb(255, 0, 0);
+        position: relative;
+        bottom: 38px;
+        left: 60%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: rgb(252, 251, 251) underline 3px solid;
+        cursor: default;
+        text-shadow: #000 2px 2px;
+    }
+
+    #About {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 38px;
+        left: 70%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+    #Contact {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 38px;
+        left: 78%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+    a {
+        color: rgb(252, 251, 251);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(189, 33, 33);
+    }
+
+    #NR {
+        cursor: pointer;
+    }
+
+
+    #Divide1 {
+        position: relative;
+        top: 30px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+    #Divide2 {
+        position: relative;
+        top: 230px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+
+    .ComingSoon {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon2 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon3 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon4 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon5 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+
+    #Handler {
+        position: relative;
+        right: 7%;
+        animation-name: Slide;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes Slide {
+        0%{transform: translateX(1000px);}
+        100%{transform: translateX(0px);}
+    }
+
+    @keyframes SlideAway {
+        0%{transform: translateX(0px);}
+        100%{transform: translateX(1500px);}
+    }
+
+    #CSText {
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 180%;
+        position: relative;
+        bottom: 250px;
+        left: 45%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText2 {
+        position: relative;
+        bottom: 310px;
+        left: 76%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText3 {
+        position: relative;
+        bottom: 190px;
+        left: 16%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText4 {
+        position: relative;
+        bottom: 250px;
+        left: 46.5%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText5 {
+        position: relative;
+        bottom: 310px;
+        left: 76%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #Footer {
+        height: 170px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #Date {
+        position: relative;
+        top: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    .Released {
+        cursor: pointer;
+    }
+
+    #Game1 {
+        display: none;
+        position: absolute;
+        transition: opacity 500ms;
+        bottom: 50px;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background: #000 transparent;
+    }
+
+    #Game1About {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        position: absolute;
+        bottom: 50px;
+        text-align: center;
+    }
+
+    /*
+#Close{
+position: relative;
+bottom: 350px;
+left:1300px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+cursor:pointer;
+}
+*/
+    #Game1Img {
+        position: absolute;
+        bottom: -50px;
+        margin-left: 0px;
+        height: 900px;
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: rgba(158, 153, 153, 0.075) 3px 3px;
+    }
+
+
+
+    #AboutPanel {
+        display: none;
+        position: relative;
+        top: -450px;
+        height: 320px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    #AboutContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*
+#CloseAbout{
+position: relative;
+bottom: -30px;
+left:1300px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+cursor:pointer;
+}
+*/
+
+    #ContactPanel {
+        display: none;
+        position: relative;
+        top: -470px;
+        height: 320px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    /*
+#CloseContact{
+position: relative;
+bottom: -20px;
+left:1300px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px;
+cursor:pointer; 
+}
+*/
+    #ContactContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #RPI {
+        display: none;
+        position: relative;
+        bottom: 600px;
+    }
+
+    #Socials {
+        position: relative;
+        left: 70%;
+    }
+
+    #FB {
+        position: relative;
+        left: -5%;
+    }
+
+    #Insta {
+        position: relative;
+        left: -3%;
+    }
+
+    #Twitter {
+        position: relative;
+        left: -1%;
+    }
+
+    #LinkedIn {
+        position: relative;
+        left: 1%;
+    }
+
+    #PlayStore {
+        font-weight: bold;
+        color: rgb(0, 255, 42);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1000px) {
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #Handler {
+        animation-name: Slide;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes Slide {
+        0%{transform: translateY(1000px);}
+        100%{transform: translateY(0px);}
+    }
+
+    @keyframes SlideAway {
+        0%{transform: translateY(0px);}
+        100%{transform: translateY(1000px);}
+    }
+    #Cont {
+        display: none;
+    }
+
+    #MainCont {
+        width: 90%;
+        min-width: 500px;
+        margin: auto;
+
+    }
+
+    #BG {
+        position: relative;
+        bottom: 100px;
+
+    }
+
+
+    #TopBar {
+        position: relative;
+        top: -80px;
+        height: 50px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    }
+
+    #Sandwich {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+    }
+
+    #SideBar {
+        position: relative;
+        top: -80px;
+        height: 465px;
+        width: 350px;
+        background-color: rgba(214, 25, 25, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        transition: all 5s ease-in-out;
+        display: none;
+    }
+
+    #LogoImg {
+        border: rgb(255, 255, 255) 1px solid;
+        border-radius: 50px;
+    }
+
+
+
+    #Overlay {
+        position: relative;
+        top: -80px;
+        height: 1150px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.685);
+    }
+
+    #LogoText {
+        filter: blur(0.05em);
+        filter: brightness(100em);
+        color: rgb(189, 33, 33);
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        bottom: 80px;
+        left: 80px;
+    }
+
+
+    #Gallary {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        border-radius: 5px;
+        height: 180px;
+        width: 80%;
+    }
+
+    #Gallary:hover {
+        position: relative;
+        left: 35px;
+        box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+        border-radius: 5px;
+        height: 200px;
+        width: 85%;
+    }
+
+    #LArrow {
+        position: relative;
+        bottom: 1920px;
+        left: 0px;
+        display: none;
+    }
+
+
+    #RArrow {
+        position: relative;
+        bottom: 1985px;
+        left: 310px;
+        display: none;
+    }
+
+    #Dot1 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+        /*
+background-color: rgb(189, 33, 33);  
+*/
+        display: none;
+    }
+
+    #Dot2 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+        display: none;
+    }
+
+    #Dot3 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+    }
+
+    #Dots {
+        position: relative;
+        right: 390px;
+        display: none;
+    }
+
+
+    #Home {
+        color: rgb(255, 0, 0);
+        position: relative;
+        bottom: 35px;
+        left: 720px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: rgb(252, 251, 251) underline 3px solid;
+        cursor: default;
+        text-shadow: #000 2px 2px;
+    }
+
+    #About {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 35px;
+        left: 770px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+    #Contact {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 35px;
+        left: 820px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+
+    #Links {
+        position: relative;
+        right: 600px;
+        font-size: 12px;
+        top: 38px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    a:hover {
+        color: rgb(189, 33, 33);
+    }
+
+
+    #NR {
+        cursor: pointer;
+    }
+
+
+    #Divide1 {
+        position: relative;
+        top: 30px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+    #Divide2 {
+        position: relative;
+        top: 230px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+    .ComingSoon {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon2 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon3 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon4 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon5 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    #CSText {
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 180%;
+        position: relative;
+        bottom: 820px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    #CSText2 {
+        position: relative;
+        bottom: 700px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText3 {
+        position: relative;
+        bottom: 570px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText4 {
+        position: relative;
+        bottom: 440px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #CSText5 {
+        position: relative;
+        bottom: 310px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    #Footer {
+        height: 170px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #Date {
+        position: relative;
+        top: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    .Released {
+        cursor: pointer;
+    }
+
+    #Game1 {
+        bottom: -100px;
+        display: none;
+        position: absolute;
+        transition: opacity 500ms;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    #Game1About {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        position: relative;
+        bottom: -50px;
+        text-align: center;
+        right: 20px;
+    }
+
+
+    #Game1Img {
+        border-radius: 2px;
+        box-shadow: #000 3px 3px;
+        position: relative;
+        bottom: -50px;
+        left: -20px;
+        width: 100%;
+    }
+
+    /*
+#Close{
+position: relative;
+bottom: 350px;
+left:440px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+    #AboutPanel {
+        display: none;
+        position: relative;
+        bottom: 1180px;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    #AboutContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*
+#CloseAbout{
+position: absolute;
+bottom: 350px;
+left:450px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+
+    #ContactPanel {
+        display: none;
+        position: relative;
+        bottom: 1200px;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    /*
+#CloseContact{
+position: absolute;
+bottom: 350px;
+left:450px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+    #ContactContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #RPI {
+        display: none;
+        position: relative;
+        bottom: 500px;
+    }
+
+
+    #Socials {
+        position: relative;
+        left: 100px;
+    }
+
+    #Insta {
+        position: relative;
+        left: 20px;
+    }
+
+    #Twitter {
+        position: relative;
+        left: 40px;
+    }
+
+    #LinkedIn {
+        position: relative;
+        left: 60px;
+    }
+
+    #PlayStore {
+        font-weight: bold;
+        color: rgb(0, 255, 42);
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:480px) {
+    #Cont {
+        background-color: rgba(15, 14, 14, 0);
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: none;
+    }
+    #Handler {
+        animation-name: Slide;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes Slide {
+        0%{transform: translateY(1000px);}
+        100%{transform: translateY(0px);}
+    }
+    @keyframes SlideAway {
+        0%{transform: translateY(0px);}
+        100%{transform: translateY(1000px);}
+    }
+    #MainCont {
+        width: 90%;
+        min-width: 200px;
+        margin: auto;
+
+    }
+
+    #BG {
+        position: relative;
+        bottom: 100px;
+
+    }
+
+    #TopBar {
+        position: relative;
+        top: -80px;
+        height: 50px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+    }
+
+    #Sandwich {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        color: black;
+        cursor: pointer;
+    }
+
+    #SideBar {
+        position: relative;
+        top: -80px;
+        height: 465px;
+        width: 250px;
+        background-color: rgba(214, 25, 25, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        transition: all 5s ease-in-out;
+        display: none;
+    }
+
+    #LogoImg {
+        border: rgb(255, 255, 255) 1px solid;
+        border-radius: 50px;
+    }
+
+
+
+    #Overlay {
+        position: relative;
+        top: -80px;
+        height: 1150px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.685);
+    }
+
+    #LogoText {
+        filter: blur(0.05em);
+        filter: brightness(100em);
+        color: rgb(189, 33, 33);
+        font-family: 'Courier New', Courier, monospace;
+        position: relative;
+        bottom: 80px;
+        left: 80px;
+    }
+
+
+    #Gallary {
+        position: relative;
+        top: 50px;
+        left: 28px;
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        border-radius: 5px;
+        height: 180px;
+        width: 80%;
+    }
+
+    #Gallary:hover {
+        position: relative;
+        left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.616) 10px 10px;
+        border-radius: 5px;
+        height: 200px;
+        width: 85%;
+    }
+
+    #LArrow {
+        position: relative;
+        bottom: 1920px;
+        left: 0px;
+        display: none;
+    }
+
+
+    #RArrow {
+        position: relative;
+        bottom: 1985px;
+        left: 310px;
+        display: none;
+    }
+
+    #Dot1 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+        /*
+background-color: rgb(189, 33, 33);  
+*/
+        display: none;
+    }
+
+    #Dot2 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+        display: none;
+    }
+
+    #Dot3 {
+        position: relative;
+        bottom: 1890px;
+        left: 530px;
+    }
+
+    #Dots {
+        position: relative;
+        right: 390px;
+        display: none;
+    }
+
+
+    #Home {
+        color: rgb(189, 33, 33);
+        position: relative;
+        bottom: 35px;
+        left: 700px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-decoration: rgb(252, 251, 251) underline 3px solid;
+        cursor: default;
+        text-shadow: #000 2px 2px;
+    }
+
+    #About {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 35px;
+        left: 750px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+    #Contact {
+        color: rgb(252, 251, 251);
+        position: relative;
+        bottom: 35px;
+        left: 790px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+        text-shadow: #000 2px 2px;
+    }
+
+
+    #Links {
+        position: relative;
+        right: 670px;
+        font-size: 12px;
+        top: 38px;
+    }
+
+
+    a {
+        color: grey;
+        cursor: pointer;
+    }
+
+    a:hover {
+        color: rgb(189, 33, 33);
+    }
+
+
+    #NR {
+        cursor: pointer;
+    }
+
+
+    #Divide1 {
+        position: relative;
+        top: 30px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+    #Divide2 {
+        position: relative;
+        top: 230px;
+        height: 30px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.322);
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.616) 1px 1px;
+    }
+
+    .ComingSoon {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon2 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon3 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon4 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    .ComingSoon5 {
+        color: grey;
+        opacity: 0.1;
+    }
+
+    #CSText {
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 180%;
+        position: relative;
+        bottom: 800px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #CSText2 {
+        position: relative;
+        bottom: 650px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    #CSText3 {
+        position: relative;
+        bottom: 500px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    #CSText4 {
+        position: relative;
+        bottom: 350px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+    #CSText5 {
+        position: relative;
+        bottom: 200px;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+
+
+    #Footer {
+        height: 170px;
+        width: 100%;
+        background: #e9000000 url("./images/BloodyScreenBG.png") 0 -10px repeat-x;
+        border: 1px solid rgba(0, 0, 0, 0.514);
+        box-shadow: rgba(0, 0, 0, 0.616) 5px 5px;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #Date {
+        position: relative;
+        top: 100px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+    .Released {
+        cursor: pointer;
+    }
+
+    #Game1 {
+        bottom: -100px;
+        display: none;
+        position: absolute;
+        transition: opacity 500ms;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+
+
+
+    #Game1About {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        position: relative;
+        bottom: -50px;
+        right: 20px;
+        text-align: center;
+
+    }
+
+
+    #Game1Img {
+        left: -20px;
+        border-radius: 2px;
+        box-shadow: #000 3px 3px;
+        position: relative;
+        bottom: -50px;
+        width: 100%;
+    }
+
+    /*
+#Close{
+position: relative;
+bottom: 360px;
+left:260px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+    #AboutPanel {
+        display: none;
+        position: relative;
+        bottom: 1180px;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    #AboutContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*
+#CloseAbout{
+position: absolute;
+bottom: 350px;
+left:260px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+
+    #ContactPanel {
+        display: none;
+        position: relative;
+        bottom: 1200px;
+        height: 350px;
+        width: 100%;
+        background-color: rgba(15, 14, 14, 0.904);
+        margin: auto;
+        z-index: 1;
+    }
+
+    /*
+#CloseContact{
+position: absolute;
+bottom: 350px;
+margin-left: 10px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+color:rgba(250, 6, 6, 0.76); 
+font-size: 20px; 
+}
+*/
+    #ContactContent {
+        font-family: Courier;
+        color: rgba(247, 242, 242, 0.712);
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    #RPI {
+        display: none;
+        position: relative;
+        bottom: 500px;
+    }
+
+
+    #Socials {
+        position: relative;
+        left: 90px;
+    }
+
+    #FB {
+        width: 45px;
+        height: 40px;
+    }
+
+    #Insta {
+        position: relative;
+        left: 20px;
+        width: 45px;
+        height: 40px;
+    }
+
+    #Twitter {
+        position: relative;
+        left: 40px;
+        width: 45px;
+        height: 40px;
+    }
+
+    #LinkedIn {
+        position: relative;
+        left: 60px;
+        width: 45px;
+        height: 40px;
+    }
+
+    #PlayStore {
+        font-weight: bold;
+        color: rgb(0, 255, 42);
+    }
+
+
+}
