@@ -20,24 +20,34 @@ export default function MyApp() {
         document.getElementById("Gallary").style.filter = "blur(0em)";
         console.log("Images");
     }
+    window.addEventListener("beforeunload", ()=>{
+        console.log("LOADED");
+        document.getElementById("Handler").style.display = "none";
+        setTimeout(() => {
+            
+            document.getElementById("Handler").style.display = "block";
+        }, 100);
+    });
     useEffect(() => {
         RELOAD(true);
         setTimeout(function () {
             document.getElementById("Loader").style.display = "none";
             document.getElementById("Cont").style.display = "block";
-            if(Reloaded===true){
-                document.getElementById("Handler").style.animationName="Slide";
-            document.getElementById("Handler").style.animationDuration="1s";
-            document.getElementById("Handler").style.animationIterationCount="1";
-                }
         }, 1000);
-        console.log({Reloaded});
+        
     }, []);
     setTimeout(function () {
         document.addEventListener("fullscreenchange", ExitHandler);
     }, 1000);
 
-
+    useEffect(()=>{
+        if(Reloaded===true){
+            console.log({Reloaded});
+            document.getElementById("Handler").style.animationName="Slide";
+        document.getElementById("Handler").style.animationDuration="1s";
+        document.getElementById("Handler").style.animationIterationCount="1";
+            }
+        },[]);
     var CClickNo = 0;
     var AClickNo = 0;
 
@@ -102,12 +112,12 @@ export default function MyApp() {
         if (AClickNo === 0) {
             CClickNo = 0;
             document.getElementById("Handler").style.animationName = "SlideAway";
-            document.getElementById("Handler").style.animationDuration = "1s";
+            document.getElementById("Handler").style.animationDuration = "0.5s";
             document.getElementById("Handler").style.animationIterationCount = "1";
             setTimeout(() => {
                 document.getElementById("Handler").style.display = "none";
                 document.getElementById("Handler").style.animationName = "Slide";
-            }, 1000);
+            }, 100);
             document.getElementById("About").style.textDecoration = "underline";
             document.getElementById("About").style.textDecorationColor = "rgb(252, 251, 251)";
             document.getElementById("About").style.textDecorationThickness = "3px";
@@ -148,12 +158,12 @@ export default function MyApp() {
         if (CClickNo === 0) {
             AClickNo = 0;
             document.getElementById("Handler").style.animationName = "SlideAway";
-            document.getElementById("Handler").style.animationDuration = "1s";
+            document.getElementById("Handler").style.animationDuration = "0.5s";
             document.getElementById("Handler").style.animationIterationCount = "1";
             setTimeout(() => {
                 document.getElementById("Handler").style.display = "none";
                 document.getElementById("Handler").style.animationName = "Slide";
-            }, 1000);
+            }, 100);
             document.getElementById("Contact").style.textDecoration = "underline";
             document.getElementById("Contact").style.textDecorationColor = "rgb(252, 251, 251)";
             document.getElementById("Contact").style.textDecorationThickness = "3px";
@@ -200,14 +210,14 @@ export default function MyApp() {
                 <center><b id="LOADTEXT">LOADING...</b></center></div>
             <div id="Cont">
                 <div id="MainCont">
-                    <div id="Game1"><img alt='' onClick={CloseGame1} id="Game1Img" src={GameName} title="CLICK/TAP TO CLOSE" />
+                    <div id="Game1"><img alt='ImmunocalypseDeadlyTour' onClick={CloseGame1} id="Game1Img" src={GameName} title="CLICK/TAP TO CLOSE" />
                         <p id="Game1About"><b>Immunocalypse-Deadly Tour is an FPS co-op multiplayer game. <br />Its been six years since APEX city was destroyed after it was attacked by creatures.
                             <br />A super soldier from the S.I.E.G.E program has been given a mission to rescue some soldiers who are being attacked by creatures who attacked APEX city years ago while uncovering the truth about what truly happened at APEX city and the secrets the N.G.O. has been hiding.<br />
                             <a id="PlayStore" href="https://www.whereever.com">-DOWNLOAD THE GAME ON PLAYSTORE-</a> </b></p>
                     </div>
                     <div id="MainContBG">
                         <header>
-                            <div id="Logo"><img alt='' onClick={GoLogIn} id="LogoImg" src={Immunocalypse2Icon} width="80px" height="80px" /><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div>
+                            <div id="Logo"><img alt='ImmunowrldLogo' onClick={GoLogIn} id="LogoImg" src={Immunocalypse2Icon} width="80px" height="80px" /><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div>
                             <div id="TopBar">
                                 <div id="Links">
                                     <h3><a href={url} id="Home" onClick={Home}>HOME</a>
@@ -218,12 +228,12 @@ export default function MyApp() {
                         </header>
                         <div id="Overlay">
                             <div id="Handler">
-                                <img alt='' onLoad={Loaded} className="Released" id="Gallary" onClick={OpenGame1} src={GameName} width="200px" height="150px" />
-                                <img alt='' onLoad={Loaded} className="ComingSoon" id="Gallary" src={GameName2} width="200px" height="150px" />
-                                <img alt='' onLoad={Loaded} className="ComingSoon2" id="Gallary" src={Gallary2} width="200px" height="150px" />
-                                <img alt='' onLoad={Loaded} className="ComingSoon3" id="Gallary" src={Gallary3} width="200px" height="150px" />
-                                <img alt='' onLoad={Loaded} className="ComingSoon4" id="Gallary" src={Gallary4} width="200px" height="150px" />
-                                <img alt='' onLoad={Loaded} className="ComingSoon5" id="Gallary" src={Gallary5} width="200px" height="150px" />
+                                <img alt='ImmunocalypseDeadlyTour' onLoad={Loaded} className="Released" id="Gallary" onClick={OpenGame1} src={GameName} width="200px" height="150px" />
+                                <img alt='ImmunocalypseDeadlyTour2' onLoad={Loaded} className="ComingSoon" id="Gallary" src={GameName2} width="200px" height="150px" />
+                                <img alt='ComingSoon' onLoad={Loaded} className="ComingSoon2" id="Gallary" src={Gallary2} width="200px" height="150px" />
+                                <img alt='ComingSoon' onLoad={Loaded} className="ComingSoon3" id="Gallary" src={Gallary3} width="200px" height="150px" />
+                                <img alt='ComingSoon' onLoad={Loaded} className="ComingSoon4" id="Gallary" src={Gallary4} width="200px" height="150px" />
+                                <img alt='ComingSoon' onLoad={Loaded} className="ComingSoon5" id="Gallary" src={Gallary5} width="200px" height="150px" />
                                 <Timer />
                                 <h1 id="CSText2">COMING SOON</h1>
                                 <h1 id="CSText3">COMING SOON</h1>
@@ -236,11 +246,11 @@ export default function MyApp() {
                     </div>
 
                 </div>
-                <footer id="Footer"><p id="Date"><b>©2022</b></p><div id="Socials">
-                    <a href="https://www.facebook.com/philip.onwubalili"><img alt='' id="FB" src={FB} height="60px" width="70px" /></a>
-                    <a href="https://www.instagram.com/philinstadev"><img alt='' id="Insta" src={Insta} height="60px" width="70px" /></a>
-                    <a href="https://twitter.com/Philip_nzube"><img alt='' id="Twitter" src={Twitter} height="60px" width="70px" /></a>
-                    <a href="https://www.linkedin.com/in/philip-onwubalili-54049823a"><img alt='' id="LinkedIn" src={LinkedIn} height="60px" width="70px" /></a>
+                <footer id="Footer"><p id="Date"><b>IMMUNOWRLD ©2022</b></p><div id="Socials">
+                    <a href="https://www.facebook.com/philip.onwubalili"><img alt='FaceBookIcon' id="FB" src={FB} height="60px" width="70px" /></a>
+                    <a href="https://www.instagram.com/philinstadev"><img alt='InstagramIcon' id="Insta" src={Insta} height="60px" width="70px" /></a>
+                    <a href="https://twitter.com/Philip_nzube"><img alt='TwitterIcon' id="Twitter" src={Twitter} height="60px" width="70px" /></a>
+                    <a href="https://www.linkedin.com/in/philip-onwubalili-54049823a"><img alt='LinkedInIcon' id="LinkedIn" src={LinkedIn} height="60px" width="70px" /></a>
                 </div></footer>
             </div>
         </>

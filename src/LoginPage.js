@@ -39,7 +39,8 @@ export default function Login() {
       console.log("FirstTime");
       //document.getElementById("GenerateButBG").style.display="block";
       document.getElementById("SubmitBG").style.display = "none";
-      document.getElementById("ResetButton").style.filter = "blur(0.2em)";
+      document.getElementById("ResetButton").style.filter = "blur(0.05em)";
+      document.getElementById("ResetButton").style.cursor="not-allowed";
 
     }
     //typeWriter();
