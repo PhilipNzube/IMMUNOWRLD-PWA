@@ -4,6 +4,12 @@
         overflow-x: hidden;
     }
 
+header{
+    position: sticky;
+    z-index: 1;
+        top:0;
+}
+
     #Cont {
         display: none;
     }
@@ -79,6 +85,7 @@
 }
 
     #LogoText {
+        scroll-padding-block-end: 10%;
         text-shadow: #000 0px 0px 15px;
         color: rgba(255, 0, 0, 0.438);
         font-family:'Courier New', Courier, monospace;
@@ -246,7 +253,8 @@ background-color: rgb(189, 33, 33);
 
 
     #Handler {
-        position: relative;
+        position: sticky;
+        top:0;
         right: 7%;
         animation-name: Slide;
         animation-duration: 1s;
@@ -440,6 +448,30 @@ cursor:pointer;
         left: -5%;
     }
 
+    #FB:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Insta:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Twitter:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #LinkedIn:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
     #Insta {
         position: relative;
         left: -3%;
@@ -475,7 +507,11 @@ cursor:pointer;
         overflow-y: hidden;
         overflow-x: hidden;
     }
-
+header{
+    position: sticky;
+    z-index: 1;
+        top:0;
+}
     #Handler {
         animation-name: Slide;
         animation-duration: 1s;
@@ -920,6 +956,30 @@ font-size: 20px;
     #LinkedIn {
         position: relative;
         left: 60px;
+    }
+
+    #FB:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Insta:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Twitter:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #LinkedIn:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
     }
 
     #PlayStore {
@@ -1401,6 +1461,30 @@ font-size: 20px;
         left: 60px;
         width: 45px;
         height: 40px;
+    }
+
+    #FB:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Insta:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #Twitter:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
+    }
+
+    #LinkedIn:hover{
+        background: rgba(0, 0, 0, 0.411);
+        box-shadow: #000 0px 0px 10px;
+        object-fit: cover;
     }
 
     #PlayStore {

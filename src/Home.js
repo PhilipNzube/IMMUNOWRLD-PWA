@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import Timer from './Timer.js';
@@ -15,7 +15,6 @@ import Twitter from "./images/Twitter.png";
 import Insta from "./images/Insta.png";
 import LinkedIn from "./images/LinkedIn.png";
 export default function MyApp() {
-    const [Reloaded, RELOAD] = useState(false);
     const Loaded = () => {
         document.getElementById("Gallary").style.filter = "blur(0em)";
         console.log("Images");
@@ -24,12 +23,10 @@ export default function MyApp() {
         console.log("LOADED");
         document.getElementById("Handler").style.display = "none";
         setTimeout(() => {
-            
             document.getElementById("Handler").style.display = "block";
         }, 100);
     });
     useEffect(() => {
-        RELOAD(true);
         setTimeout(function () {
             document.getElementById("Loader").style.display = "none";
             document.getElementById("Cont").style.display = "block";
@@ -40,14 +37,7 @@ export default function MyApp() {
         document.addEventListener("fullscreenchange", ExitHandler);
     }, 1000);
 
-    useEffect(()=>{
-        if(Reloaded===true){
-            console.log({Reloaded});
-            document.getElementById("Handler").style.animationName="Slide";
-        document.getElementById("Handler").style.animationDuration="1s";
-        document.getElementById("Handler").style.animationIterationCount="1";
-            }
-        },[]);
+    
     var CClickNo = 0;
     var AClickNo = 0;
 
@@ -202,6 +192,44 @@ export default function MyApp() {
     const GoLogIn = () => {
         Navigate("/");
     }
+    const VisitDemo = () =>{
+        Navigate("/Demo");
+    }
+//var timer=null;
+var lastScrollTop=0;
+    window.onscroll =()=>{
+        if(window.innerWidth<=999){
+var st=window.pageYOffset || document.documentElement.scrollTop;
+if(st>lastScrollTop){
+    console.log("DarkBGMobile");
+    document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
+}else{
+    console.log("NoDarkBGMobile");
+    document.getElementById("Bar").style.backdropFilter="blur(0em)";
+}
+lastScrollTop=st<=0?0:st;
+        }else if(window.innerWidth>999){
+        if((window.innerHeight + window.scrollY)>=document.body.scrollHeight){
+            console.log("DarkBG");
+            document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
+        }else{
+        console.log("NoDarkBG");
+            document.getElementById("Bar").style.backdropFilter="blur(0em)";
+        }
+        /*
+        if(timer!==null){
+            console.log("NoDarkBG");
+            document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
+            clearTimeout(timer);
+        }
+        timer=setTimeout(()=>{
+            console.log("DarkBG");
+            document.getElementById("Bar").style.backdropFilter="blur(0em)"; 
+        },150) 
+        */
+    }
+    }
+    
     let url = null;
     return (
         <>
@@ -216,7 +244,7 @@ export default function MyApp() {
                             <a id="PlayStore" href="https://www.whereever.com">-DOWNLOAD THE GAME ON PLAYSTORE-</a> </b></p>
                     </div>
                     <div id="MainContBG">
-                        <header>
+                        <header id="Bar">
                             <div id="Logo"><img alt='ImmunowrldLogo' onClick={GoLogIn} id="LogoImg" src={Immunocalypse2Icon} width="80px" height="80px" /><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div>
                             <div id="TopBar">
                                 <div id="Links">
@@ -242,7 +270,7 @@ export default function MyApp() {
                             </div>
                         </div>
                         <div id="ContactPanel"><p id="ContactContent"><br /><br />Phone No: 09016482578<br /><br /><b>SOCIAL MEDIA:</b><br />Twitter: @Philip_nzube<br /><br />Whatsapp: 09029751915<br /><br />Instagram: philinstadev<br /><br />Facebook: Philip Nzubechukwu</p></div>
-                        <div id="AboutPanel"><p id="AboutContent"><br /><br /><br /><br /><br /><b>This is where you can find all the games created by Onwubalili Philip Nzube.<br />All IMMUNOWRLD games are connected.  </b></p></div>
+                        <div id="AboutPanel"><p id="AboutContent"><br /><br /><br /><br /><br /><b>This is where you can find all the games created by Onwubalili Philip Nzube. You can visit <a href={url} onClick={VisitDemo}><b>here</b></a> for the demos<br />All IMMUNOWRLD games are connected.  </b></p></div>
                     </div>
 
                 </div>

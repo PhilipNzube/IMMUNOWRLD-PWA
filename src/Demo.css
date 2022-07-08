@@ -1,0 +1,10 @@
+#Container{
+    display: none;
+}
+#Content{
+    display: flex;
+}
+
+#Back{
+    border: #000 1px solid;
+}
