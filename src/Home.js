@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 import Timer from './Timer.js';
@@ -19,7 +19,7 @@ export default function MyApp() {
         document.getElementById("Gallary").style.filter = "blur(0em)";
         console.log("Images");
     }
-    window.addEventListener("beforeunload", ()=>{
+    window.addEventListener("beforeunload", () => {
         console.log("LOADED");
         document.getElementById("Handler").style.display = "none";
         setTimeout(() => {
@@ -31,13 +31,13 @@ export default function MyApp() {
             document.getElementById("Loader").style.display = "none";
             document.getElementById("Cont").style.display = "block";
         }, 1000);
-        
+
     }, []);
     setTimeout(function () {
         document.addEventListener("fullscreenchange", ExitHandler);
     }, 1000);
 
-    
+
     var CClickNo = 0;
     var AClickNo = 0;
 
@@ -188,48 +188,112 @@ export default function MyApp() {
         document.getElementById("Home").style.cursor = "default";
     }
 
+    const HoverHome = () => {
+        if (AClickNo === 1 || CClickNo === 1) {
+            document.getElementById("Home").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
+            if(window.innerWidth>999){
+                document.getElementById("Home").style.bottom="40px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Home").style.bottom="38px";    
+                }
+        }
+    }
+
+    const EndHoverHome = () => {
+        if (AClickNo === 1 || CClickNo === 1) {
+            document.getElementById("Home").style.textDecoration = "none";
+            if(window.innerWidth>999){
+                document.getElementById("Home").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Home").style.bottom="35px";    
+                }
+        }
+    }
+
+    const HoverAbout = () => {
+        if (AClickNo === 0) {
+            document.getElementById("About").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
+            if(window.innerWidth>999){
+                document.getElementById("About").style.bottom="40px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("About").style.bottom="38px";    
+                }
+        }
+    }
+
+    const EndHoverAbout = () => {
+        if (AClickNo === 0) {
+            document.getElementById("About").style.textDecoration = "none";
+            if(window.innerWidth>999){
+                document.getElementById("About").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("About").style.bottom="35px";    
+                }
+        }
+    }
+
+    const HoverContact = () => {
+        if (CClickNo === 0) {
+            document.getElementById("Contact").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
+            if(window.innerWidth>999){
+                document.getElementById("Contact").style.bottom="40px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Contact").style.bottom="38px";    
+                }
+        }
+    }
+
+    const EndHoverContact = () => {
+        if (CClickNo === 0) {
+            document.getElementById("Contact").style.textDecoration = "none";
+            if(window.innerWidth>999){
+            document.getElementById("Contact").style.bottom="38px";
+            }else if(window.innerWidth<=999){
+            document.getElementById("Contact").style.bottom="35px";    
+            }
+        }
+    }
+
     const Navigate = useNavigate();
     const GoLogIn = () => {
         Navigate("/");
     }
-    const VisitDemo = () =>{
-        Navigate("/Demo");
-    }
-//var timer=null;
-var lastScrollTop=0;
-    window.onscroll =()=>{
-        if(window.innerWidth<=999){
-var st=window.pageYOffset || document.documentElement.scrollTop;
-if(st>lastScrollTop){
-    console.log("DarkBGMobile");
-    document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
-}else{
-    console.log("NoDarkBGMobile");
-    document.getElementById("Bar").style.backdropFilter="blur(0em)";
-}
-lastScrollTop=st<=0?0:st;
-        }else if(window.innerWidth>999){
-        if((window.innerHeight + window.scrollY)>=document.body.scrollHeight){
-            console.log("DarkBG");
-            document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
-        }else{
-        console.log("NoDarkBG");
-            document.getElementById("Bar").style.backdropFilter="blur(0em)";
+
+    //var timer=null;
+    var lastScrollTop = 0;
+    window.onscroll = () => {
+        if (window.innerWidth <= 999) {
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                console.log("DarkBGMobile");
+                document.getElementById("Bar").style.backdropFilter = "blur(0.2em)";
+            } else {
+                console.log("NoDarkBGMobile");
+                document.getElementById("Bar").style.backdropFilter = "blur(0em)";
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+        } else if (window.innerWidth > 999) {
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+                console.log("DarkBG");
+                document.getElementById("Bar").style.backdropFilter = "blur(0.2em)";
+            } else {
+                console.log("NoDarkBG");
+                document.getElementById("Bar").style.backdropFilter = "blur(0em)";
+            }
+            /*
+            if(timer!==null){
+                console.log("NoDarkBG");
+                document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
+                clearTimeout(timer);
+            }
+            timer=setTimeout(()=>{
+                console.log("DarkBG");
+                document.getElementById("Bar").style.backdropFilter="blur(0em)"; 
+            },150) 
+            */
         }
-        /*
-        if(timer!==null){
-            console.log("NoDarkBG");
-            document.getElementById("Bar").style.backdropFilter="blur(0.2em)";
-            clearTimeout(timer);
-        }
-        timer=setTimeout(()=>{
-            console.log("DarkBG");
-            document.getElementById("Bar").style.backdropFilter="blur(0em)"; 
-        },150) 
-        */
     }
-    }
-    
+
     let url = null;
     return (
         <>
@@ -248,9 +312,9 @@ lastScrollTop=st<=0?0:st;
                             <div id="Logo"><img alt='ImmunowrldLogo' onClick={GoLogIn} id="LogoImg" src={Immunocalypse2Icon} width="80px" height="80px" /><div id="LogoText"><h1>IMMUNOWRLD</h1></div></div>
                             <div id="TopBar">
                                 <div id="Links">
-                                    <h3><a href={url} id="Home" onClick={Home}>HOME</a>
-                                        <a href={url} id="About" onClick={OpenAbout}>ABOUT</a>
-                                        <a href={url} id="Contact" onClick={OpenContact}>CONTACT</a></h3>
+                                    <h3><a href={url} id="Home" onMouseLeave={EndHoverHome} onMouseOver={HoverHome} onClick={Home}>HOME</a>
+                                        <a href={url} id="About" onMouseLeave={EndHoverAbout} onMouseOver={HoverAbout} onClick={OpenAbout}>ABOUT</a>
+                                        <a href={url} id="Contact" onMouseLeave={EndHoverContact} onMouseOver={HoverContact} onClick={OpenContact}>CONTACT</a></h3>
                                 </div>
                             </div>
                         </header>
@@ -270,11 +334,11 @@ lastScrollTop=st<=0?0:st;
                             </div>
                         </div>
                         <div id="ContactPanel"><p id="ContactContent"><br /><br />Phone No: 09016482578<br /><br /><b>SOCIAL MEDIA:</b><br />Twitter: @Philip_nzube<br /><br />Whatsapp: 09029751915<br /><br />Instagram: philinstadev<br /><br />Facebook: Philip Nzubechukwu</p></div>
-                        <div id="AboutPanel"><p id="AboutContent"><br /><br /><br /><br /><br /><b>This is where you can find all the games created by Onwubalili Philip Nzube. You can visit <a href={url} onClick={VisitDemo}><b>here</b></a> for the demos<br />All IMMUNOWRLD games are connected.  </b></p></div>
+                        <div id="AboutPanel"><p id="AboutContent"><br /><br /><br /><br /><br /><b>This is where you can find all the games created by Onwubalili Philip Nzube.<br />All IMMUNOWRLD games are connected.  </b></p></div>
                     </div>
 
                 </div>
-                <footer id="Footer"><p id="Date"><b>IMMUNOWRLD ©2022</b></p><div id="Socials">
+                <footer id="Footer"><p id="Date"><b>© 2022 IMMUNOWRLD</b></p><div id="Socials">
                     <a href="https://www.facebook.com/philip.onwubalili"><img alt='FaceBookIcon' id="FB" src={FB} height="60px" width="70px" /></a>
                     <a href="https://www.instagram.com/philinstadev"><img alt='InstagramIcon' id="Insta" src={Insta} height="60px" width="70px" /></a>
                     <a href="https://twitter.com/Philip_nzube"><img alt='TwitterIcon' id="Twitter" src={Twitter} height="60px" width="70px" /></a>

@@ -350,7 +350,7 @@ input[type="text"] {
   }
 
   #RememberID {
-    color: #ccc;
+    color: rgb(255, 253, 253);
     position: relative;
     right: 10px;
     bottom: 5px;
@@ -371,8 +371,6 @@ input[type="text"] {
     width: 80px;
     height: 30px;
     position: relative;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
@@ -380,7 +378,10 @@ input[type="text"] {
     color: rgb(0, 0, 0);
   }
 
-
+  #ResetButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
+  }
   
   #CloseButton {
     text-align: center;
@@ -394,8 +395,6 @@ input[type="text"] {
     width: 100px;
     height: 30px;
     position: relative;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
@@ -403,6 +402,10 @@ input[type="text"] {
     color: rgb(0, 0, 0);
   }
 
+  #CloseButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
+  }
 
   #REMBG {
     position: relative;
@@ -1095,7 +1098,7 @@ input[type="text"] {
   }
 
   #RememberID {
-    color: #ccc;
+    color: rgb(255, 253, 253);
     position: relative;
     right: 10px;
     bottom: 5px;
@@ -1116,13 +1119,16 @@ input[type="text"] {
     width: 80px;
     height: 30px;
     position: relative;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
     font-family: OCR A Std, monospace;
     color: rgb(0, 0, 0);
+  }
+
+  #ResetButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
   }
 
   #CloseButton {
@@ -1137,13 +1143,16 @@ input[type="text"] {
     width: 100px;
     height: 30px;
     position: relative;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
     font-family: OCR A Std, monospace;
     color: rgb(0, 0, 0);
+  }
+
+  #CloseButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
   }
 
   #REMBG {
@@ -1854,7 +1863,7 @@ input[type="text"] {
   }
 
   #RememberID {
-    color: #ccc;
+    color: rgb(255, 253, 253);
     position: relative;
     right: 10px;
     bottom: 5px;
@@ -1875,13 +1884,16 @@ input[type="text"] {
     width: 80px;
     height: 30px;
     position: relative;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
     font-family: OCR A Std, monospace;
     color: rgb(0, 0, 0);
+  }
+
+  #ResetButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
   }
 
   #CloseButton {
@@ -1896,13 +1908,16 @@ input[type="text"] {
     padding:2%;
     width: 100px;
     height: 30px;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
     box-shadow: 0 0 10px #aaa;
     font-size: larger;
     font-weight: bold;
     font-family: OCR A Std, monospace;
     color: rgb(0, 0, 0);
+  }
+
+  #CloseButton:hover{
+    border-color: white;
+    color: rgba(0, 0, 0, 0.596);
   }
 
 

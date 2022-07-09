@@ -30,7 +30,6 @@ export default function Login() {
 
       //localStorage.setItem("FirstTime",true); 
     }
-    var FirstTime = JSON.parse(localStorage.getItem("FirstTime"));
     if (FirstTime === false) {
       document.getElementById("ResetButton").style.filter = "blur(0em)";
       //localStorage.setItem("FirstTime",true);
