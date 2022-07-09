@@ -18,6 +18,6 @@ function START(){
         </>
     )
 }
-//swDev();
+swDev();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<START/>);
