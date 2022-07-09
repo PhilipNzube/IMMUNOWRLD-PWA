@@ -33,10 +33,10 @@ this.addEventListener("install", (event) => {
         })
     )
 })
-var condition=navigator.onLine?'online':'offline';
+//var condition=navigator.onLine?'online':'offline';
     this.addEventListener("fetch", (event) => {
-        if(condition==='offline'){
-            console.log("Offline");
+        //if(condition==='offline'){
+            //console.log("Offline");
         event.respondWith(
             caches.match(event.request).then((resp) => {
                 if (resp) {
@@ -46,5 +46,5 @@ var condition=navigator.onLine?'online':'offline';
 
 
         )
-    }
+    //}
     })
