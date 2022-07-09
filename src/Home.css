@@ -4,11 +4,11 @@
         overflow-x: hidden;
     }
 
-header{
-    position: sticky;
-    z-index: 1;
-        top:0;
-}
+    header {
+        position: sticky;
+        z-index: 1;
+        top: 0;
+    }
 
     #Cont {
         display: none;
@@ -71,24 +71,24 @@ header{
         margin: auto;
     }
 
-    #LogoImg{
+    #LogoImg {
         cursor: pointer;
         border: rgb(255, 255, 255) 1px solid;
         border-radius: 50px;
     }
 
-#LogoImg:hover{
-    object-fit:cover;
-    backdrop-filter: blur(0.2em);
-    border-color: red;
-    border-style:dotted;
-}
+    #LogoImg:hover {
+        object-fit: cover;
+        backdrop-filter: blur(0.2em);
+        border-color: red;
+        border-style: dotted;
+    }
 
     #LogoText {
         scroll-padding-block-end: 10%;
         text-shadow: #000 0px 0px 15px;
         color: rgba(255, 0, 0, 0.438);
-        font-family:'Courier New', Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         position: relative;
         bottom: 80px;
         left: 80px;
@@ -108,7 +108,7 @@ header{
 
     #Gallary:hover {
         box-shadow: rgb(0, 0, 0) 0px 0px 30px;
-        object-fit:cover;
+        object-fit: cover;
         border-radius: 5px;
         z-index: 1;
     }
@@ -163,7 +163,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 38px;
         left: 60%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: rgb(252, 251, 251) underline 3px solid;
         cursor: default;
         text-shadow: #000 0px 0px 10px;
@@ -174,12 +174,12 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 38px;
         left: 70%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
     }
 
-    #About:hover{
+    #About:hover {
         text-decoration: rgb(252, 251, 251) underline 3px solid;
     }
 
@@ -188,12 +188,12 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 38px;
         left: 78%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
     }
 
-    
+
 
     a {
         color: rgb(252, 251, 251);
@@ -260,7 +260,7 @@ background-color: rgb(189, 33, 33);
 
     #Handler {
         position: sticky;
-        top:0;
+        top: 0;
         right: 7%;
         animation-name: Slide;
         animation-duration: 1s;
@@ -268,13 +268,23 @@ background-color: rgb(189, 33, 33);
     }
 
     @keyframes Slide {
-        0%{transform: translateX(1000px);}
-        100%{transform: translateX(0px);}
+        0% {
+            transform: translateX(1000px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
     }
 
     @keyframes SlideAway {
-        0%{transform: translateX(0px);}
-        100%{transform: translateX(1500px);}
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(1500px);
+        }
     }
 
     #CSText {
@@ -329,7 +339,7 @@ background-color: rgb(189, 33, 33);
     #Date {
         position: relative;
         top: 100px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
 
@@ -454,25 +464,25 @@ cursor:pointer;
         left: -5%;
     }
 
-    #FB:hover{
+    #FB:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Insta:hover{
+    #Insta:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Twitter:hover{
+    #Twitter:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #LinkedIn:hover{
+    #LinkedIn:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
@@ -513,11 +523,13 @@ cursor:pointer;
         overflow-y: hidden;
         overflow-x: hidden;
     }
-header{
-    position: sticky;
-    z-index: 1;
-        top:0;
-}
+
+    header {
+        position: sticky;
+        z-index: 1;
+        top: 0;
+    }
+
     #Handler {
         animation-name: Slide;
         animation-duration: 1s;
@@ -525,14 +537,25 @@ header{
     }
 
     @keyframes Slide {
-        0%{transform: translateY(1000px);}
-        100%{transform: translateY(0px);}
+        0% {
+            transform: translateY(1000px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
 
     @keyframes SlideAway {
-        0%{transform: translateY(0px);}
-        100%{transform: translateY(1000px);}
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(1000px);
+        }
     }
+
     #Cont {
         display: none;
     }
@@ -588,11 +611,11 @@ header{
         border-radius: 50px;
     }
 
-    #LogoImg:hover{
-        object-fit:cover;
+    #LogoImg:hover {
+        object-fit: cover;
         backdrop-filter: blur(0.2em);
         border-color: red;
-        border-style:dotted;
+        border-style: dotted;
     }
 
     #Overlay {
@@ -606,7 +629,7 @@ header{
     #LogoText {
         text-shadow: #000 0px 0px 15px;
         color: rgba(255, 0, 0, 0.438);
-        font-family:'Courier New', Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         position: relative;
         bottom: 80px;
         left: 80px;
@@ -682,7 +705,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: -10%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: default;
         text-shadow: #000 0px 0px 10px;
         text-decoration: rgb(252, 251, 251) underline 3px solid;
@@ -693,7 +716,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: 0%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
     }
@@ -703,7 +726,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: 10%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
     }
@@ -977,25 +1000,25 @@ font-size: 20px;
         height: 50px;
     }
 
-    #FB:hover{
+    #FB:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Insta:hover{
+    #Insta:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Twitter:hover{
+    #Twitter:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #LinkedIn:hover{
+    #LinkedIn:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
@@ -1012,17 +1035,22 @@ font-size: 20px;
 
 
 @media only screen and (max-width:480px) {
-    #Cont {
-        background-color: rgba(15, 14, 14, 0);
+    body {
         overflow-y: hidden;
         overflow-x: hidden;
+    }
+    #Cont {
+        background-color: rgba(15, 14, 14, 0);
         display: none;
     }
-    header{
-    position: sticky;
-    z-index: 1;
-        top:0;
-}
+
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+    }
+
     #Handler {
         animation-name: Slide;
         animation-duration: 1s;
@@ -1030,13 +1058,25 @@ font-size: 20px;
     }
 
     @keyframes Slide {
-        0%{transform: translateY(1000px);}
-        100%{transform: translateY(0px);}
+        0% {
+            transform: translateY(1000px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
     }
+
     @keyframes SlideAway {
-        0%{transform: translateY(0px);}
-        100%{transform: translateY(1000px);}
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(1000px);
+        }
     }
+
     #MainCont {
         width: 90%;
         min-width: 200px;
@@ -1087,13 +1127,13 @@ font-size: 20px;
         border-radius: 50px;
     }
 
-    #LogoImg:hover{
-        object-fit:cover;
+    #LogoImg:hover {
+        object-fit: cover;
         backdrop-filter: blur(0.2em);
         border-color: red;
-        border-style:dotted;
+        border-style: dotted;
     }
-    
+
     #Overlay {
         position: relative;
         top: -80px;
@@ -1105,7 +1145,7 @@ font-size: 20px;
     #LogoText {
         text-shadow: #000 0px 0px 15px;
         color: rgba(255, 0, 0, 0.438);
-        font-family:'Courier New', Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         position: relative;
         bottom: 80px;
         left: 80px;
@@ -1181,7 +1221,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: -10%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: default;
         text-shadow: #000 0px 0px 10px;
         font-size: 12px;
@@ -1193,7 +1233,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: 0%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
         font-size: 12px;
@@ -1204,7 +1244,7 @@ background-color: rgb(189, 33, 33);
         position: relative;
         bottom: 35px;
         left: 10%;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         cursor: pointer;
         text-shadow: #000 0px 0px 10px;
         font-size: 12px;
@@ -1489,25 +1529,25 @@ font-size: 20px;
         height: 40px;
     }
 
-    #FB:hover{
+    #FB:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Insta:hover{
+    #Insta:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #Twitter:hover{
+    #Twitter:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
     }
 
-    #LinkedIn:hover{
+    #LinkedIn:hover {
         background: rgba(0, 0, 0, 0.411);
         box-shadow: #000 0px 0px 10px;
         object-fit: cover;
