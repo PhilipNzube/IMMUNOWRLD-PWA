@@ -7,6 +7,8 @@ this.addEventListener("install", (event) => {
                 '/static/js/main.7dd794ba.js',
                 '/static/css/main.ac19865a.css',
                 '/static/css/main.56bafd35.css',
+                '/static/js/main.0766d5a8.js',
+                '/static/css/main.4a87bccc.css',
                 '/manifest.json',
                 '/static/media/Background7.2ed50cea59e8cc231adf.jpg',
                 '/static/media/Background5.ee6aed90144fb9cc8818.jpg',
