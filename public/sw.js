@@ -39,7 +39,7 @@ this.addEventListener("install", (event) => {
 //var condition=navigator.onLine?'online':'offline';
     this.addEventListener("fetch", (event) => {
         //if(condition==='offline'){
-            if(!navigator.onLine){
+            //if(!navigator.onLine){
             console.log("Offline");
         event.respondWith(
             caches.match(event.request).then((resp) => {
@@ -50,5 +50,5 @@ this.addEventListener("install", (event) => {
 
 
         )
-    }
+    //}
     })
