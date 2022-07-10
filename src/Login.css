@@ -275,6 +275,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #SubmitBG:hover{
@@ -305,6 +306,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #Submit {
@@ -1018,6 +1020,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #SubmitBG:hover{
@@ -1048,6 +1051,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #Submit {
@@ -1784,6 +1788,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #SubmitBG:hover{
@@ -1814,6 +1819,7 @@ input[type="text"] {
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 10px rgb(41, 39, 39);
+    backdrop-filter: blur(0.5em);
   }
 
   #Submit {
