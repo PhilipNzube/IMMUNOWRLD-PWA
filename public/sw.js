@@ -5,8 +5,7 @@ this.addEventListener("install", (event) => {
             cache.addAll([
                 '/static/css/main.254b7cb9.css',
                 '/static/css/main.904412c4.css',
-                '/static/js/main.0766d5a8.js',
-                '/static/js/bundle.js',
+                '/static/js/.*\\.js',
                 '/static/media/Background5.ee6aed90144fb9cc8818.jpg',
                 '/static/media/Background7.2ed50cea59e8cc231adf.jpg',
                 '/static/media/BloodyScreenBG.5772cdb53134222a9d7a.png',
