@@ -88,8 +88,18 @@ export default function MyApp() {
         document.getElementById("Home").style.color = "rgb(255, 0, 0)";
         document.getElementById("Contact").style.textDecoration = "none";
         document.getElementById("Contact").style.color = "rgb(252, 251, 251)";
+        if(window.innerWidth>999){
+            document.getElementById("Contact").style.bottom="38px";
+            }else if(window.innerWidth<=999){
+            document.getElementById("Contact").style.bottom="35px";    
+            }
         document.getElementById("About").style.textDecoration = "none";
         document.getElementById("About").style.color = "rgb(252, 251, 251)";
+        if(window.innerWidth>999){
+            document.getElementById("About").style.bottom="38px";
+            }else if(window.innerWidth<=999){
+            document.getElementById("About").style.bottom="35px";    
+            }
         document.getElementById("ContactPanel").style.display = "none";
         document.getElementById("AboutPanel").style.display = "none";
         document.getElementById("Home").style.cursor = "default";
@@ -114,8 +124,18 @@ export default function MyApp() {
             document.getElementById("About").style.color = "rgb(255, 0, 0)";
             document.getElementById("Home").style.textDecoration = "none";
             document.getElementById("Home").style.color = "rgb(252, 251, 251)";
+            if(window.innerWidth>999){
+                document.getElementById("Home").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Home").style.bottom="35px";    
+                }
             document.getElementById("Contact").style.textDecoration = "none";
             document.getElementById("Contact").style.color = "rgb(252, 251, 251)";
+            if(window.innerWidth>999){
+                document.getElementById("Contact").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Contact").style.bottom="35px";    
+                }
             document.getElementById("AboutPanel").style.display = "block";
             document.getElementById("ContactPanel").style.display = "none";
             document.getElementById("Home").style.cursor = "pointer";
@@ -160,8 +180,18 @@ export default function MyApp() {
             document.getElementById("Contact").style.color = "rgb(255, 0, 0)";
             document.getElementById("Home").style.textDecoration = "none";
             document.getElementById("Home").style.color = "rgb(252, 251, 251)";
+            if(window.innerWidth>999){
+                document.getElementById("Home").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("Home").style.bottom="35px";    
+                }
             document.getElementById("About").style.textDecoration = "none";
             document.getElementById("About").style.color = "rgb(252, 251, 251)";
+            if(window.innerWidth>999){
+                document.getElementById("About").style.bottom="38px";
+                }else if(window.innerWidth<=999){
+                document.getElementById("About").style.bottom="35px";    
+                }
             document.getElementById("ContactPanel").style.display = "block";
             document.getElementById("AboutPanel").style.display = "none";
             document.getElementById("Home").style.cursor = "pointer";
