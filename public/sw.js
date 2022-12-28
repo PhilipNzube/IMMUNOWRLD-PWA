@@ -3,10 +3,6 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                '/static/css/main.254b7cb9.css',
-                '/static/css/main.904412c4.css',
-                '/static/js/main.0766d5a8.js',
-                '/static/js/main.bf4f645e.js',
                 '/static/js/bundle.js',
                 '/static/media/Background5.ee6aed90144fb9cc8818.jpg',
                 '/static/media/Background7.2ed50cea59e8cc231adf.jpg',
@@ -19,12 +15,6 @@ this.addEventListener("install", (event) => {
                 '/static/media/Gallary4.57e6e710c531ca0db947.png',
                 '/static/media/Insta.e9857db10ca57d66ad36.png',
                 '/static/media/Immunocalypse2-Icon.bdad6b135d75e6552b06.png',
-                //'/static/js/.*\\.js',
-                //'/static/css/.*\\.css',
-                //'/static/media/.*\\.png',
-                //'/static/media/.*\\.jpg',
-                //'https:.*/static/js/.*\\.js',
-                //'https:.*/static/css/.*\\.css',
                 '/manifest.json',
                 '/Immunocalypse2-Icon.png',
                 '/Immunocalypse2-Iconb.png',
@@ -40,9 +30,7 @@ this.addEventListener("install", (event) => {
 })
 //var condition=navigator.onLine?'online':'offline';
     this.addEventListener("fetch", (event) => {
-        //if(condition==='offline'){
-            //if(!navigator.onLine){
-            //console.log("Offline");
+        if (!navigator.onLine) {
         event.respondWith(
             caches.match(event.request).then((resp) => {
                 if (resp) {
@@ -52,5 +40,5 @@ this.addEventListener("install", (event) => {
 
 
         )
-    //}
+    }
     })
