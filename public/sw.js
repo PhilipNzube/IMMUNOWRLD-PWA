@@ -3,7 +3,8 @@ this.addEventListener("install", (event) => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                '/static/js/bundle.js',
+                '/static/css/main.904412c4.css',
+                '/static/js/main.bf4f645e.js',
                 '/static/media/Background5.ee6aed90144fb9cc8818.jpg',
                 '/static/media/Background7.2ed50cea59e8cc231adf.jpg',
                 '/static/media/BloodyScreenBG.5772cdb53134222a9d7a.png',
@@ -28,9 +29,9 @@ this.addEventListener("install", (event) => {
         })
     )
 })
-//var condition=navigator.onLine?'online':'offline';
     this.addEventListener("fetch", (event) => {
         if (!navigator.onLine) {
+            console.log("Offline");
         event.respondWith(
             caches.match(event.request).then((resp) => {
                 if (resp) {
