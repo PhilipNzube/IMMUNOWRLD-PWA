@@ -39,7 +39,7 @@ export default function Login() {
       //document.getElementById("GenerateButBG").style.display="block";
       document.getElementById("SubmitBG").style.display = "none";
       document.getElementById("ResetButton").style.filter = "blur(0.05em)";
-      document.getElementById("ResetButton").style.cursor="not-allowed";
+      document.getElementById("ResetButton").style.cursor = "not-allowed";
 
     }
     //typeWriter();

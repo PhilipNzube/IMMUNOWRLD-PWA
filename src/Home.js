@@ -88,18 +88,18 @@ export default function MyApp() {
         document.getElementById("Home").style.color = "rgb(255, 0, 0)";
         document.getElementById("Contact").style.textDecoration = "none";
         document.getElementById("Contact").style.color = "rgb(252, 251, 251)";
-        if(window.innerWidth>999){
-            document.getElementById("Contact").style.bottom="38px";
-            }else if(window.innerWidth<=999){
-            document.getElementById("Contact").style.bottom="35px";    
-            }
+        if (window.innerWidth > 999) {
+            document.getElementById("Contact").style.bottom = "38px";
+        } else if (window.innerWidth <= 999) {
+            document.getElementById("Contact").style.bottom = "35px";
+        }
         document.getElementById("About").style.textDecoration = "none";
         document.getElementById("About").style.color = "rgb(252, 251, 251)";
-        if(window.innerWidth>999){
-            document.getElementById("About").style.bottom="38px";
-            }else if(window.innerWidth<=999){
-            document.getElementById("About").style.bottom="35px";    
-            }
+        if (window.innerWidth > 999) {
+            document.getElementById("About").style.bottom = "38px";
+        } else if (window.innerWidth <= 999) {
+            document.getElementById("About").style.bottom = "35px";
+        }
         document.getElementById("ContactPanel").style.display = "none";
         document.getElementById("AboutPanel").style.display = "none";
         document.getElementById("Home").style.cursor = "default";
@@ -124,18 +124,18 @@ export default function MyApp() {
             document.getElementById("About").style.color = "rgb(255, 0, 0)";
             document.getElementById("Home").style.textDecoration = "none";
             document.getElementById("Home").style.color = "rgb(252, 251, 251)";
-            if(window.innerWidth>999){
-                document.getElementById("Home").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Home").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Home").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Home").style.bottom = "35px";
+            }
             document.getElementById("Contact").style.textDecoration = "none";
             document.getElementById("Contact").style.color = "rgb(252, 251, 251)";
-            if(window.innerWidth>999){
-                document.getElementById("Contact").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Contact").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Contact").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Contact").style.bottom = "35px";
+            }
             document.getElementById("AboutPanel").style.display = "block";
             document.getElementById("ContactPanel").style.display = "none";
             document.getElementById("Home").style.cursor = "pointer";
@@ -180,18 +180,18 @@ export default function MyApp() {
             document.getElementById("Contact").style.color = "rgb(255, 0, 0)";
             document.getElementById("Home").style.textDecoration = "none";
             document.getElementById("Home").style.color = "rgb(252, 251, 251)";
-            if(window.innerWidth>999){
-                document.getElementById("Home").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Home").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Home").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Home").style.bottom = "35px";
+            }
             document.getElementById("About").style.textDecoration = "none";
             document.getElementById("About").style.color = "rgb(252, 251, 251)";
-            if(window.innerWidth>999){
-                document.getElementById("About").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("About").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("About").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("About").style.bottom = "35px";
+            }
             document.getElementById("ContactPanel").style.display = "block";
             document.getElementById("AboutPanel").style.display = "none";
             document.getElementById("Home").style.cursor = "pointer";
@@ -221,65 +221,65 @@ export default function MyApp() {
     const HoverHome = () => {
         if (AClickNo === 1 || CClickNo === 1) {
             document.getElementById("Home").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
-            if(window.innerWidth>999){
-                document.getElementById("Home").style.bottom="40px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Home").style.bottom="38px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Home").style.bottom = "40px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Home").style.bottom = "38px";
+            }
         }
     }
 
     const EndHoverHome = () => {
         if (AClickNo === 1 || CClickNo === 1) {
             document.getElementById("Home").style.textDecoration = "none";
-            if(window.innerWidth>999){
-                document.getElementById("Home").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Home").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Home").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Home").style.bottom = "35px";
+            }
         }
     }
 
     const HoverAbout = () => {
         if (AClickNo === 0) {
             document.getElementById("About").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
-            if(window.innerWidth>999){
-                document.getElementById("About").style.bottom="40px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("About").style.bottom="38px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("About").style.bottom = "40px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("About").style.bottom = "38px";
+            }
         }
     }
 
     const EndHoverAbout = () => {
         if (AClickNo === 0) {
             document.getElementById("About").style.textDecoration = "none";
-            if(window.innerWidth>999){
-                document.getElementById("About").style.bottom="38px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("About").style.bottom="35px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("About").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("About").style.bottom = "35px";
+            }
         }
     }
 
     const HoverContact = () => {
         if (CClickNo === 0) {
             document.getElementById("Contact").style.textDecoration = "rgb(252, 251, 251) underline 2px solid";
-            if(window.innerWidth>999){
-                document.getElementById("Contact").style.bottom="40px";
-                }else if(window.innerWidth<=999){
-                document.getElementById("Contact").style.bottom="38px";    
-                }
+            if (window.innerWidth > 999) {
+                document.getElementById("Contact").style.bottom = "40px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Contact").style.bottom = "38px";
+            }
         }
     }
 
     const EndHoverContact = () => {
         if (CClickNo === 0) {
             document.getElementById("Contact").style.textDecoration = "none";
-            if(window.innerWidth>999){
-            document.getElementById("Contact").style.bottom="38px";
-            }else if(window.innerWidth<=999){
-            document.getElementById("Contact").style.bottom="35px";    
+            if (window.innerWidth > 999) {
+                document.getElementById("Contact").style.bottom = "38px";
+            } else if (window.innerWidth <= 999) {
+                document.getElementById("Contact").style.bottom = "35px";
             }
         }
     }
